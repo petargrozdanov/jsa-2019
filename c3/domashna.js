@@ -17,8 +17,3 @@ function studentDetails(s) {
 studentDetails(studenti);
 
 
-
-
-
-
-
