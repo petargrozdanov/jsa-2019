@@ -3,11 +3,11 @@ function broenizborovi() {
     var zbor = 0;
   
     for (var i = 0; i < str.length; i++)
-      if (str[i] === " ") { 
+      if (str[i] == " ") { 
        zbor = zbor+1;
     }
-    zbor = zbor+ 1; 
-    return zbor
+ 
+    return zbor;
   }
   
   console.log(broenizborovi());
