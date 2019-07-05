@@ -1,23 +1,22 @@
-var calculator = (req, rez) =>{
+var Calculator = (req, res) => {
     var rez = 0;
-    switch(req.params.op){
-        case `add`:
-             rez = Number(req.params.a) + Number(req.params.b);
-             break;
-        case `sub`:
+    switch(req.params.op) {
+        case 'add':
+            rez = Number(req.params.a) + Number(req.params.b);
+            break;
+        case 'sub':
             rez = Number(req.params.a) - Number(req.params.b);
             break;
-        case `mul`:
+        case 'mul':
             rez = Number(req.params.a) * Number(req.params.b);
             break;
-        case `dvi`:
+        case 'div':
             rez = Number(req.params.a) / Number(req.params.b);
-            break;                
-                
+            break;
     }
-    res.send(rez + ` `);
+    res.send(rez + '');
 }
-module.exports = {
-    calculator
-};
 
+module.exports = {
+    Calculator
+};

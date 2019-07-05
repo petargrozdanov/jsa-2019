@@ -1,15 +1,19 @@
 var GetAllStudents = (req, res) => {
-    res.send(`Hello from /students`);
+    res.send('Hello from /students');
 };
-var GetStudentById = (req, res) =>{
-    res.send(`Get sinlge student with id: ${req.params.id}` +req.params.sub);
+
+var GetStudentByID = (req, res) => {
+    res.send('Get single student with id: ' + req.params.id);
 };
+
 var GetStudentSubjectGrades = (req, res) => {
-    res.send(`Students with id: ` +req.params.id+ ` grades for subject: ` +req.params.sub);
+    res.send('Student with id: ' + req.params.id + ' grades for subject: ' + req.params.sub);
 };
+
+
+
 module.exports = {
-    
     GetAllStudents,
-    GetStudentById,
+    GetStudentByID,
     GetStudentSubjectGrades
 };
